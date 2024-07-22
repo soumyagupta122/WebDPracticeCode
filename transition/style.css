@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: whitesmoke;
+    border: 3px solid rgb(6, 0, 1);
+}
+
+.box{
+    margin: 30px;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(10, 201, 244);
+    border: 10px solid pink;
+    text-align: center;
+
+    /*  TRANSITION */
+
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+
+    /* ANIMATION */
+    /* top: 50%;
+    left: 50%; */
+    position: relative;
+    animation-name: boxtocircle;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+    animation-direction: normal;
+}
+
+@keyframes boxtocircle {
+    
+    0%{
+        top: 2%;
+        left: 2%;
+    }
+
+    28%{
+        top: 75%;
+        left: 85%;
+    }
+
+    53%{
+        top: 2%;
+        left: 85%;
+    }
+
+    79%{
+        top: 75%;
+        left: 2%;
+    }
+
+    100%{
+        top: 2%;
+        left: 2%;
+    }
+}
+
+.box:hover {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    border: 10px solid rgb(10, 201, 244);
+    border-radius: 50%;
+    text-align: center;
+}

@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 3px solid rgb(153, 7, 7);
+    background-color: antiquewhite;
+    height: 100vh;
+    width: 100vw;
+}
+
+.box {
+    width: 300px;
+    height: 150px;
+    border: 4px solid rgb(88, 4, 4);
+    border-radius: 10px;
+    background-color: rgb(36, 230, 165);
+    margin: 30px;
+    position: relative;
+    animation-name: rightmovement;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    /* animation-fill-mode: both; */
+}
+
+@keyframes rightmovement{
+    from{
+        top: 0;
+        left: 0;
+    }
+
+    to{
+        top: 0;
+        left: 1888px;
+    }
+}

@@ -1,0 +1,17 @@
+.movingtext {
+    display: inline;
+    text-align: center;
+    
+}
+
+.container {
+    position: relative;
+  }
+  
+.container img {
+    width: 150px;
+}
+
+#aboutme {
+    font-weight: 500;
+}

@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    height: 300px;
+    width: 300px;
+    border: 4px solid black;
+    /* text-align: center; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 40px;
+    background-color: pink;
+
+    transition: all 5s ease;
+}
+
+.container {
+    background-color: beige;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    transform: rotate(45deg) scale(1.5) skew(10deg);
+    height: 300px;
+    width: 300px;
+    border: 4px solid black;
+    border-radius: 30%;
+    /* transform: scale(1.5); */
+}
+
+
+.circle {
+    height: 300px;
+    width: 300px;
+    border: 2.4px solid black;
+    border-radius: 50%;
+    background-color: rgb(192, 229, 244);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 40px;
+
+    position: absolute;
+    top: 2%;
+    left: 2%;
+
+
+    /* ANIMATION */
+
+    animation: circlemovement 15s linear 1s infinite normal ;
+    transition: all 1s ease;
+}
+
+@keyframes circlemovement {
+    25% {
+        top: 2%;
+        left: 85%;
+    }
+
+    50%{
+        top: 70%;
+        left: 85%;
+    }
+
+    75%{
+        top: 70%;
+        left: 2%;
+    }
+
+    100%{
+        top: 2%;
+        left: 2%;
+    }
+}
+
+.circle:hover {
+    height: 200px;
+    width: 200px; 
+    border: 2.4px solid black;
+    border-radius: 2px;
+    transform: rotate(360deg);
+}

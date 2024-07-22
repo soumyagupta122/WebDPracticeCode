@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.circle {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(234, 218, 40);
+    border: 3px solid rgb(243, 86, 110);
+    border-radius: 50px;
+    text-align: center;
+    top: 345px;
+    left: 1000px;
+
+    /* Movement property */
+    position: relative;
+    animation-name: CircleMovement;
+    /* transition-property: width; */
+    animation-duration: 10s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-direction: alternate;
+}
+
+
+@keyframes CircleMovement {
+    0%{
+        top: 2%;
+        left: 2%;
+    }
+
+    33%{
+        top: 75%;
+        left: 2%;
+    }
+
+    67%{
+        top: 2%;
+        left: 95%;
+    }
+
+    100%{
+        top: 75%;
+        left: 95%;
+    }
+}
+
+.box{
+
+    height: 100vh;
+    width: 100vw;
+    background-color: bisque;
+    border: 12px solid rgb(12, 12, 115);
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    /* align-items: flex-start; */
+}
+
+.box1{
+    width: 500px;
+    height: 100px;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    /* margin-bottom: 650px;  */
+    background-color: rgb(197, 46, 227);
+
+/* Movement property */
+
+    position: relative;
+    animation-name: MovementRight;
+    /* transition-property: width; */
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-direction: alternate;
+}
+@keyframes MovementRight {
+    from{
+        top: 0;
+        left: 0;
+    }
+
+    to{
+        top: 0;
+        left: 1700px;
+    }
+}
+
+.box2{
+    width: 500px;
+    height: 100px;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: rgb(13, 109, 192);
+
+    /* this is so movement of boxes get synchronised otherwise properties of
+    boxes does not load equally that causes unsynchronised time movement
+    between two boxes. */
+    top: 710px;
+
+    /* Movement property */
+
+    position: relative;
+    animation-name: MovementLeft;
+    /* transition-property: width; */
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-direction: alternate-reverse;
+     
+}
+
+@keyframes MovementLeft {
+    from{
+        left: 0;
+    }
+
+    to{
+        left: 1700px;
+    }
+}
+
+
+
+
+
+
+
+

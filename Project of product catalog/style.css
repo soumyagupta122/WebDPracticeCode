@@ -1,0 +1,23 @@
+#xyz {
+    display: inline;
+    font-size: larger;
+    margin-right: 40px;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    color: gray;
+}
+
+.xx {
+    text-decoration: none;
+}
+
+h3 {
+    display: inline;
+}
+
+div {
+    scroll-behavior: smooth;
+}

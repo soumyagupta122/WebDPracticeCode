@@ -1,0 +1,52 @@
+p, h1 {
+    
+    text-align: center;
+    font-size: larger;
+}
+
+h1 {
+    color: rgb(2, 2, 48);
+}
+
+p {
+    color: red;
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    font-size: larger;
+    color: blueviolet;
+    display: inline;
+    margin-right: 2rem;
+    font-size: x-large;
+    
+}
+
+li:hover {
+    cursor: pointer;
+    color: pink;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: pink;
+}
+
+.vdoo {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.audo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h4 {
+    text-align: center;
+}
