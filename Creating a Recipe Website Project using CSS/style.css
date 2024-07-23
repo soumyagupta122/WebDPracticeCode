@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    height: 100px;
+    text-align: center;
+    font-size: 5rem;
+    color: #03533d;
+    /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); */
+}
+
+.container {
+    width: 100vw;
+    height: 4045px;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(234,199,199,1) 0%, rgba(181,188,243,1) 99.3% ); */
+    /* background-image: linear-gradient( 102.7deg,  rgba(253,218,255,1) 8.2%, rgba(223,173,252,1) 19.6%, rgba(173,205,252,1) 36.8%, rgba(173,252,244,1) 73.2%, rgba(202,248,208,1) 90.9% ); */
+}
+
+.navContainer {
+    /* background-image: linear-gradient( 109.6deg,  rgba(112,246,255,0.33) 11.2%, rgba(221,108,241,0.26) 42%, rgba(229,106,253,0.71) 71.5%, rgba(123,183,253,1) 100.2% ); */
+    height: 140px;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(234,199,199,1) 0%, rgba(181,188,243,1) 99.3% );
+    border-bottom: 3px dotted blue;
+}
+
+.para{
+    animation: textmov 5s ease-in-out 1s infinite alternate ;
+    position: relative;
+    margin-top: 35px;
+}
+
+@keyframes textmov {
+    from{
+        top: 2%;
+        left: 2%;
+        color: rgb(22, 4, 123);
+    }
+
+    to{
+        top: 2%;
+        left: 90%;
+        /* color: rgb(249, 90, 249); */
+        color: aliceblue;
+    }
+}
+
+.navList {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    margin-top: 0px;
+    font-size: 50px;
+    /* margin-top: 10px; */
+}
+
+.navbar {
+    /* margin-left: 10px; */
+    margin-right: 10px;
+    margin-top: 25px;
+    transition: all 3s linear 0s;
+}
+
+.navbar1 ,.navbar2, .navbar3 {
+    text-decoration: none;
+    transition: all 1s;
+    color: #03533d;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.navbar1:hover ,.navbar2:hover ,.navbar3:hover{
+    font-size: 60px;
+    text-decoration-line: underline;
+    color: rgb(100, 100, 100);
+
+}
+
+
+#pppp {
+    padding-top: 25px;
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(234,199,199,1) 0%, rgba(181,188,243,1) 99.3% );
+    height: 80px;
+}
+
+.Home {
+    height: 1150px;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; */
+
+}
+
+.brdr {
+    margin-left: 10px;
+    margin: 20px;
+    height: 750px;
+    width: 2200px;
+    border: 2px solid darkcyan;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* box-shadow: 5px 5px 5px darkcyan;
+    box-shadow: 5px 5px 5px darkcyan inset */
+    box-shadow: 0 0 5px 5px darkcyan;
+}
+
+#yup {
+    text-align: center;
+    font-size: 2.5rem;
+    color: black;
+    
+}
+#up {
+    height: 50px;
+    width: 50px;
+}
+
+
+#Home {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.box {
+    width: 600px;
+    height: 600px;
+    /* border: 1px solid lightseagreen; */
+    border-radius: 50px;
+    margin: 20px;
+    margin-top: 30px;
+}
+
+h2 {
+    animation: textt 5s linear 0s infinite alternate;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+@keyframes textt {
+    from {
+        left: 2%;
+        color: rgb(22, 196, 138);
+    }
+
+    to {
+        left: 80%;
+        color: rgb(60, 44, 231);
+    }
+}
+
+#ppp {
+    margin: 10px;
+}
+
+.About {
+    height: 1200px;
+    font-size: 1.5rem;
+}
+.contact {
+    height: 1200px;
+    font-size: 1.5rem;
+}
+
+#pp {
+    text-align: center;
+}
+
+footer {
+    position: relative;
+    /* top: 10px; */
+}
+
+.footerbox {
+    top: 2px;
+}
+
+#img1 {
+    width: 600px;
+    height: 600px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px black;
+    transition: all 0.3s linear 0s;
+}
+
+#img2 {
+    width: 600px;
+    height: 600px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px black;
+    transition: all 0.3s linear 0s;
+}
+#img3 {
+    width: 600px;
+    height: 600px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px black;
+    transition: all 0.3s linear 0s;
+}
+
+.img:hover{
+    transform: scale(1.1) rotate(5deg);
+    /* transform: rotate(5deg); */
+}
+
